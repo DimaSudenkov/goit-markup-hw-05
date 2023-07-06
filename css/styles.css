@@ -903,9 +903,9 @@ img{
     line-height: 1.17;
     letter-spacing: 0.48px;
     color: var(--light-slate);
+    user-select: none;
 
     /* font-weight: 400;
-    user-select: none;
     display: flex;
     align-items: center;
     margin-bottom: 24px;
@@ -930,7 +930,7 @@ img{
     fill: transparent;
 }
 
-.input-checkbox:checked > .user-privacy + .checkbox-custom{
+.input-checkbox:checked + .form-label-checkbox .checkbox-custom{
     background-color: var(--cl-osean);
     border: none;
     fill: var(--bg-cl-cloud);
