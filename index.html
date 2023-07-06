@@ -304,7 +304,6 @@
         <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &amp;
           growth solutions.</p>
       </div>
-
       <div class="social-conteiner ">
         <p class="social-text">Social media</p>
         <ul class="footer-list-messenger list">
@@ -334,19 +333,19 @@
             </a></li>
         </ul>
       </div>
-
-      <form class="form-email">
-        <p class="form-email-text">Subscribe</p>
-        <label class="form-label-email">
-          <input type="email" name="email" class="form-input-email" placeholder="E-mail">
-        </label>
-        <button type="submit" class="form-button-email">Subscribe
-          <svg class="form-icon-email" width="24" height="24">
-            <use href="./images/icons.svg#icon-subscribe"></use>
-          </svg>
-        </button>
-      </form>
-
+      <div class="form-container">
+        <form class="form-email">
+          <p class="form-email-text">Subscribe</p>
+          <label class="form-label-email">
+            <input type="email" name="email" class="form-input-email" placeholder="E-mail">
+          </label>
+          <button type="submit" class="form-button-email">Subscribe
+            <svg class="form-icon-email" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
   <!-- Model window -->
@@ -357,48 +356,53 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <strong class="form-title">Leave your contacts and we will call you back</strong>
 
-      <form class="form" name="review_form">
-        <label class="form-label">
-          <span class="form-text">Name</span>
-          <input class="form-input" type="text" name="user_name" />
-          <svg class="form-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-        </label>
-        <label class="form-label">
-          <span class="form-text">Phone</span>
-          <input class="form-input" type="tel" name="user_phone" />
-          <svg class="form-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
-        </label>
-        <label class="form-label">
-          <span class="form-text">Email</span>
-          <input class="form-input" type="email" name="user_email" />
-          <svg class="form-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg>
-        </label>
-
-        <label class="form-label-comment">
-          <span class="form-text">Comment</span>
-          <textarea class="form-textarea" name="Comment" rows="6" placeholder="Text input"></textarea>
-        </label>
-
-        <label class="form-label-checkbox">
-          <input class="input-checkbox visually-hidden" type="checkbox" name="checkbox" />
-          <span class="checkbox-custom"><svg class="checkbox-icon" width="10" height="8">
-              <use href="./images/icons.svg#icon-click"></use>
+      <div class="modal-forma-container">
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="form" name="review_form">
+          <div class="form-label-container">
+            <label for="user-name" class="form-label"></label>
+            <span class="form-text">Name</span>
+          </div>
+          <div class="container-input-icon">
+            <input id="user-name" class="form-input" type="text" name="user-name" />
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
             </svg>
-          </span>
-          <span class="checkbox-text">I accept the terms and conditions of the <a href="" class="checkbox-link">Privacy
-              Policy</a></span>
-        </label>
+          </div>
 
-        <button class="hero-button" type="submit">Send</button>
-      </form>
+          <label class="form-label">
+            <span class="form-text">Phone</span>
+            <input class="form-input" type="tel" name="user_phone" />
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="form-label">
+            <span class="form-text">Email</span>
+            <input class="form-input" type="email" name="user_email" />
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="form-label-comment">
+            <span class="form-text">Comment</span>
+            <textarea class="form-textarea" name="Comment" rows="6" placeholder="Text input"></textarea>
+          </label>
+          <label class="form-label-checkbox">
+            <div></div>
+            <input class="input-checkbox visually-hidden" type="checkbox" name="checkbox" />
+            <span class="checkbox-custom"><svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-click"></use>
+              </svg>
+            </span>
+            <span class="checkbox-text">I accept the terms and conditions of the <a href=""
+                class="checkbox-link">Privacy
+                Policy</a></span>
+          </label>
+          <button class="hero-button" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
