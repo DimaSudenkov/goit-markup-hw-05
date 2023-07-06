@@ -862,9 +862,8 @@ img{
     border-color: var(--cl-iris);
 }
 
-.form-label-comment{
-    display: block;
-    margin-bottom: 16px;
+.user-comment-container{
+    margin-bottom: 16px
 }
 
 .form-textarea {
@@ -895,22 +894,34 @@ img{
     letter-spacing: 0.48px;
 }
 
+.checkbox-container{
+    margin-bottom: 24px;
+}
+
 .form-label-checkbox{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    color: var(--light-slate);
+
+    /* font-weight: 400;
+    user-select: none;
     display: flex;
     align-items: center;
     margin-bottom: 24px;
     width: 100%;
-    gap: 8px;
+    gap: 8px; */
 }
+
+.input-checkbox{}
 
 .input-checkbox:checked {}
 
 .checkbox-custom{    
     width: 16px;
     height: 16px;
-
     border-radius: 2px;
-    border: 1px solid #2E2F4266;
+    border: 1px solid rgba(46, 47, 66, 0.4);
 
     display:flex;
     justify-content: center;
