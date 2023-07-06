@@ -930,7 +930,7 @@ img{
     fill: transparent;
 }
 
-.input-checkbox:checked + .user-privacy > .checkbox-custom{
+.input-checkbox:checked > .user-privacy + .checkbox-custom{
     background-color: var(--cl-osean);
     border: none;
     fill: var(--bg-cl-cloud);
