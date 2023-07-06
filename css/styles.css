@@ -785,24 +785,36 @@ img{
 
 .form {}
 
+
+.form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.32px;
+    color:#2E2F42;
+    margin-bottom: 16px;
+    
+    
+    /* display: block;
+    width: 360px; */
+}
+
 .form-label-container{
     margin-bottom: 8px;
 }
 
-.form-title {
-    display: block;
-    width: 360px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    margin-bottom: 16px;
-    color:#2E2F42;
-}
-
 .form-label {
-    position: relative;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--light-slate);
     display: block;
+    margin-bottom: 4px;
+    
+
+
+    position: relative;
     margin-bottom: 8px;
 }
 
