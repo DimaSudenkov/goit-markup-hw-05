@@ -529,15 +529,18 @@ img{
 
 /* email-container */
 
-.form-email{}
+.form-email{
+    display: flex;
+    gap: 24px;
+}
 
 .form-email-text {
-    color: var(--bg-cl-white);
-    font-size: 16px;
+    margin-bottom: 16px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-bottom: 16px;
+    color: var(--bg-cl-white);
 }
 
 .form-label-email {}
@@ -545,13 +548,19 @@ img{
 .form-input-email {
     width: 264px;
     height: 40px;
-    padding: 8px 16px;
+    border: 1px solid var(--bg-cl-white);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+
     margin-right: 22px;
 
-    border-radius: 4px;
-    border: 1px solid var(--bg-cl-white);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color: transparent;
     outline: transparent;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -562,30 +571,32 @@ img{
 }
 
 .form-input-email::placeholder{
-    color: var(--bg-cl-white);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 2;
-    letter-spacing: 0.48px;
+    color: #ffffff;
 }
 
 .form-button-email {
-    color: var(--bg-cl-white);
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+
+
+
+    /* color: var(--bg-cl-white);
     letter-spacing: 0.64px;
     padding: 8px 24px;
     
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-
-    border-radius: 4px;
-    background-color: #4D5AE5;
-
-
+    gap: 16px; */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -594,7 +605,9 @@ img{
     background-color: #404BBF;
 }
 
-.form-icon-email {}
+.form-icon-email {
+    margin-left: 16px;
+}
 
 /* Portfolio styles */
 
